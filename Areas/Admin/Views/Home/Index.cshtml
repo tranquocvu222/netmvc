@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Admin Page";
+    ViewBag.Session = Session["username"];
+    Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+
+@section header{
+    Admin Page
+}
+@section username{
+    @Session["USER_SESSION"].ToString()
+}
+
+
+
